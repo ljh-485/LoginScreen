@@ -52,7 +52,7 @@
             txtID.Location = new Point(139, 239);
             txtID.Name = "txtID";
             txtID.Size = new Size(572, 78);
-            txtID.TabIndex = 1;
+            txtID.TabIndex = 2;
             txtID.Text = "아이디";
             txtID.Enter += txtID_Enter;
             txtID.KeyDown += txtID_KeyDown;
@@ -65,7 +65,7 @@
             txtPW.Location = new Point(139, 368);
             txtPW.Name = "txtPW";
             txtPW.Size = new Size(572, 78);
-            txtPW.TabIndex = 2;
+            txtPW.TabIndex = 3;
             txtPW.Text = "패스워드";
             txtPW.Enter += txtPW_Enter;
             txtPW.KeyDown += txtPW_KeyDown;
@@ -78,7 +78,7 @@
             btnLogin.Location = new Point(308, 624);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(221, 103);
-            btnLogin.TabIndex = 3;
+            btnLogin.TabIndex = 1;
             btnLogin.Text = "로그인";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
@@ -90,7 +90,7 @@
             lblLoginError.Location = new Point(176, 565);
             lblLoginError.Name = "lblLoginError";
             lblLoginError.Size = new Size(483, 32);
-            lblLoginError.TabIndex = 4;
+            lblLoginError.TabIndex = 0;
             lblLoginError.Text = "아이디 또는 패스워드가 일치하지 않습니다.";
             lblLoginError.Visible = false;
             // 
