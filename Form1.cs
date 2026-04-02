@@ -57,11 +57,12 @@ namespace LoginScreen
 
             if (inputID == MyID && inputPW == MyPW)
             {
+                lblLoginError.Text = "";
                 MessageBox.Show("로그인 성공!");
             }
             else
             {
-                MessageBox.Show("로그인 실패! 아이디 또는 패스워드를 확인하세요.");
+                lblLoginError.Text = "아이디 혹은 패스워드가 일치하지 않습니다.";
             }
         }
     }

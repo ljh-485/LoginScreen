@@ -32,6 +32,7 @@
             txtID = new TextBox();
             txtPW = new TextBox();
             btnLogin = new Button();
+            lblLoginError = new Label();
             SuspendLayout();
             // 
             // lblName
@@ -48,7 +49,7 @@
             // 
             txtID.Font = new Font("맑은 고딕", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 129);
             txtID.ForeColor = Color.Silver;
-            txtID.Location = new Point(139, 304);
+            txtID.Location = new Point(139, 239);
             txtID.Name = "txtID";
             txtID.Size = new Size(572, 78);
             txtID.TabIndex = 1;
@@ -60,7 +61,7 @@
             // 
             txtPW.Font = new Font("맑은 고딕", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 129);
             txtPW.ForeColor = Color.Silver;
-            txtPW.Location = new Point(139, 462);
+            txtPW.Location = new Point(139, 368);
             txtPW.Name = "txtPW";
             txtPW.Size = new Size(572, 78);
             txtPW.TabIndex = 2;
@@ -79,11 +80,21 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
+            // lblLoginError
+            // 
+            lblLoginError.AutoSize = true;
+            lblLoginError.ForeColor = Color.Red;
+            lblLoginError.Location = new Point(176, 565);
+            lblLoginError.Name = "lblLoginError";
+            lblLoginError.Size = new Size(0, 32);
+            lblLoginError.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(872, 814);
+            Controls.Add(lblLoginError);
             Controls.Add(btnLogin);
             Controls.Add(txtPW);
             Controls.Add(txtID);
@@ -100,5 +111,6 @@
         private TextBox txtID;
         private TextBox txtPW;
         private Button btnLogin;
+        private Label lblLoginError;
     }
 }
