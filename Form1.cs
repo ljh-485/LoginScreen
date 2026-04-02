@@ -7,6 +7,8 @@ namespace LoginScreen
             InitializeComponent();
         }
 
+       
+
         private void txtID_Enter(object sender, EventArgs e)
         {
             if (txtID.Text == "아이디")
@@ -21,7 +23,7 @@ namespace LoginScreen
             if (string.IsNullOrWhiteSpace(txtID.Text))
             {
                 txtID.Text = "아이디";
-                txtID.ForeColor = Color.Gray;
+                txtID.ForeColor = Color.Silver;
             }
         }
 
@@ -41,7 +43,25 @@ namespace LoginScreen
             {
                 txtPW.UseSystemPasswordChar = false;
                 txtPW.Text = "패스워드";
-                txtPW.ForeColor = Color.Gray;
+                txtPW.ForeColor = Color.Silver;
+            }
+        }
+
+        string MyID = "wsad1234";
+        string MyPW = "qwe123!";
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string inputID = txtID.Text;
+            string inputPW = txtPW.Text;
+
+            if (inputID == MyID && inputPW == MyPW)
+            {
+                MessageBox.Show("로그인 성공!");
+            }
+            else
+            {
+                MessageBox.Show("로그인 실패! 아이디 또는 패스워드를 확인하세요.");
             }
         }
     }
