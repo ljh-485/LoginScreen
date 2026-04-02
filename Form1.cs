@@ -6,5 +6,14 @@ namespace LoginScreen
         {
             InitializeComponent();
         }
+
+        private void txtID_Enter(object sender, EventArgs e)
+        {
+            if (txtID.Text == "아이디")
+            {
+                txtID.Text = "";
+                txtID.ForeColor = Color.Black;
+            }
+        }
     }
 }

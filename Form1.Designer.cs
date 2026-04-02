@@ -28,12 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            lblName = new Label();
+            txtID = new TextBox();
+            txtPW = new TextBox();
+            btnLogin = new Button();
+            SuspendLayout();
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Font = new Font("맑은 고딕", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lblName.Location = new Point(308, 90);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(221, 92);
+            lblName.TabIndex = 0;
+            lblName.Text = "Login";
+            // 
+            // txtID
+            // 
+            txtID.Font = new Font("맑은 고딕", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            txtID.ForeColor = Color.Silver;
+            txtID.Location = new Point(139, 304);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(572, 78);
+            txtID.TabIndex = 1;
+            txtID.Text = "아이디";
+            txtID.Enter += txtID_Enter;
+            // 
+            // txtPW
+            // 
+            txtPW.Font = new Font("맑은 고딕", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            txtPW.ForeColor = Color.Silver;
+            txtPW.Location = new Point(139, 462);
+            txtPW.Name = "txtPW";
+            txtPW.Size = new Size(572, 78);
+            txtPW.TabIndex = 2;
+            txtPW.Text = "패스워드";
+            // 
+            // btnLogin
+            // 
+            btnLogin.Font = new Font("맑은 고딕", 18F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            btnLogin.Location = new Point(308, 624);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(221, 103);
+            btnLogin.TabIndex = 3;
+            btnLogin.Text = "로그인";
+            btnLogin.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(872, 814);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPW);
+            Controls.Add(txtID);
+            Controls.Add(lblName);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblName;
+        private TextBox txtID;
+        private TextBox txtPW;
+        private Button btnLogin;
     }
 }
