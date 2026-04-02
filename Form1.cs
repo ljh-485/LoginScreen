@@ -47,8 +47,8 @@ namespace LoginScreen
             }
         }
 
-        string MyID = "wsad1234";
-        string MyPW = "qwe123!";
+        string MyID = "admin";
+        string MyPW = "superman";
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
