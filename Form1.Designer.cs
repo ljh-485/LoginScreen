@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblName = new Label();
+            lblAppName = new Label();
             txtID = new TextBox();
             txtPW = new TextBox();
             btnLogin = new Button();
             lblLoginError = new Label();
             SuspendLayout();
             // 
-            // lblName
+            // lblAppName
             // 
-            lblName.AutoSize = true;
-            lblName.Font = new Font("맑은 고딕", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            lblName.Location = new Point(308, 90);
-            lblName.Name = "lblName";
-            lblName.Size = new Size(221, 92);
-            lblName.TabIndex = 0;
-            lblName.Text = "Login";
+            lblAppName.AutoSize = true;
+            lblAppName.Font = new Font("맑은 고딕", 25.875F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lblAppName.Location = new Point(308, 90);
+            lblAppName.Name = "lblAppName";
+            lblAppName.Size = new Size(221, 92);
+            lblAppName.TabIndex = 0;
+            lblAppName.Text = "Login";
             // 
             // txtID
             // 
@@ -55,6 +55,7 @@
             txtID.TabIndex = 1;
             txtID.Text = "아이디";
             txtID.Enter += txtID_Enter;
+            txtID.KeyDown += txtID_KeyDown;
             txtID.Leave += txtID_Leave;
             // 
             // txtPW
@@ -67,11 +68,13 @@
             txtPW.TabIndex = 2;
             txtPW.Text = "패스워드";
             txtPW.Enter += txtPW_Enter;
+            txtPW.KeyDown += txtPW_KeyDown;
             txtPW.Leave += txtPW_Leave;
             // 
             // btnLogin
             // 
             btnLogin.Font = new Font("맑은 고딕", 18F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            btnLogin.ForeColor = Color.DodgerBlue;
             btnLogin.Location = new Point(308, 624);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(221, 103);
@@ -100,16 +103,16 @@
             Controls.Add(btnLogin);
             Controls.Add(txtPW);
             Controls.Add(txtID);
-            Controls.Add(lblName);
+            Controls.Add(lblAppName);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Login Scereen";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label lblName;
+        private Label lblAppName;
         private TextBox txtID;
         private TextBox txtPW;
         private Button btnLogin;

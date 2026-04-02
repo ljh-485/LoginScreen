@@ -7,7 +7,7 @@ namespace LoginScreen
             InitializeComponent();
         }
 
-       
+
 
         private void txtID_Enter(object sender, EventArgs e)
         {
@@ -57,14 +57,32 @@ namespace LoginScreen
 
             if (inputID == MyID && inputPW == MyPW)
             {
-                
+
                 MessageBox.Show("로그인 성공!");
                 lblLoginError.Visible = false;
             }
             else
             {
                 lblLoginError.Visible = true;
-                
+
+            }
+        }
+
+        private void txtID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; // 엔터키 입력 방지
+                txtPW.Focus(); // 패스워드 입력창으로 포커스 이동
+            }
+        }
+
+        private void txtPW_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                btnLogin.PerformClick(); // 로그인 버튼 클릭 이벤트 실행
             }
         }
     }
