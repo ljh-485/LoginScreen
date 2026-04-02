@@ -59,11 +59,12 @@ namespace LoginScreen
             {
 
                 MessageBox.Show("로그인 성공!");
-                lblLoginError.Visible = false;
+                lblErrorMsg.Visible = false;
             }
             else
             {
-                MessageBox.Show("로그인실패~", "로그인", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("로그인실패~", "로그인", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblErrorMsg.Visible = true;
 
 
             }
