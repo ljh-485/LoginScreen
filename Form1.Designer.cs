@@ -89,9 +89,8 @@
             lblLoginError.ForeColor = Color.Red;
             lblLoginError.Location = new Point(176, 565);
             lblLoginError.Name = "lblLoginError";
-            lblLoginError.Size = new Size(483, 32);
+            lblLoginError.Size = new Size(0, 32);
             lblLoginError.TabIndex = 0;
-            lblLoginError.Text = "아이디 또는 패스워드가 일치하지 않습니다.";
             lblLoginError.Visible = false;
             // 
             // Form1

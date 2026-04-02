@@ -63,7 +63,8 @@ namespace LoginScreen
             }
             else
             {
-                lblLoginError.Visible = true;
+                MessageBox.Show("로그인실패~", "로그인", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
 
             }
         }
