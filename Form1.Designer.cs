@@ -54,6 +54,7 @@
             txtID.TabIndex = 1;
             txtID.Text = "아이디";
             txtID.Enter += txtID_Enter;
+            txtID.Leave += txtID_Leave;
             // 
             // txtPW
             // 
@@ -64,6 +65,8 @@
             txtPW.Size = new Size(572, 78);
             txtPW.TabIndex = 2;
             txtPW.Text = "패스워드";
+            txtPW.Enter += txtPW_Enter;
+            txtPW.Leave += txtPW_Leave;
             // 
             // btnLogin
             // 
